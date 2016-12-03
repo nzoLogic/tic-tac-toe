@@ -1,8 +1,15 @@
-#board {
-  margin-top: 10px;
+.row {
+  border: 1px dashed blue;
 }
-
-.box {
+.content-card {
+  border: 1px dotted red;
+}
+.square {
   border: 1px solid black;
-  height: 150px;
+  padding: 30px 15px;
+  min-width: 60px;
+  min-height: 60px;
+}
+.container {
+  width: 98%;
 }
