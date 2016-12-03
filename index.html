@@ -1,49 +1,46 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-
-    <!-- set viewport to device width to allow responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TIC-TAC TOE</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"
+      integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src='js/app.js' type='text/js'></script>
 
-    <!-- Bootstrap CSS from CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <!-- link to custom stylesheet (always require after Bootstrap) -->
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
-    <!-- jQuery from CDN -->
-
-
-    <!-- link to custom javascript file (always require after external JS libraries) -->
-
-    <title>Tic Tac Toe</title>
   </head>
-  <body>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1>Tic Tac Toe</h1>
-          <hr>
-        </div>
+  <body class='container'>
+    <header class='row'>
+      <h1 class='col-md-12'>Tic-Tac-Toe</h1>
+    </header>
+    <main>
+      <p>main</p>
+      <div class='content-card game-board col-md-12'>
+        <section class='row' id='top'>
+          <div class='content-card square col-md-2 col-md-offset-2 col-sm-3'><p>square</p></div>
+          <div class='content-card square col-md-2 col-sm-3'><p>square</p></div>
+          <div class='content-card square col-md-2'><p>square</p></div>
+        </section>
+        <section class='row' id='middle'>
+          <div class='content-card square col-md-2 col-md-offset-2'><p>square</p></div>
+          <div class='content-card square col-md-2'><p>square</p></div>
+          <div class='content-card square col-md-2'><p>square</p></div>
+        </section>
+        <section class='row' id='bottom'>
+          <div class='content-card square col-md-2 col-md-offset-2'><p>square</p></div>
+          <div class='content-card square col-md-2'><p>square</p></div>
+          <div class='content-card square col-md-2'><p>square</p></div>
+        </section>
       </div>
-      <div class="row">
+      <section class='row'>
+        <div class='content-card player col-md-6'><p>players</p></div>
+        <div class='content-card player col-md-6'><p>players</p></div>
+      </section>
+    </main>
 
-        <!-- a column represents our game board -->
-        <!-- the `offset` class helps us center the board -->
-        <div class="col-md-6 col-md-offset-3" id="board">
-
-          <!-- you can put rows inside of columns! -->
-          <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
-          <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-          </div>
-
-
-
-        </div>
-      </div>
-    </div>
   </body>
 </html>
