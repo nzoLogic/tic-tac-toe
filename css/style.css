@@ -33,6 +33,7 @@ h3 {
 .content {
   position: absolute;
   top: 35%;
+  left: 35%;
 }
 .player-1 , .player-2 {
   font-size: 22px;
@@ -54,4 +55,7 @@ h3 {
 }
 .player-2-turn {
   background-color: #0517bc;
+}
+.clear {
+
 }

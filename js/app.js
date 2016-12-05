@@ -27,6 +27,9 @@ var p1 = {
       col: []
     },
     player = 'X';
+function clearBoard (){
+  $('.content').empty();
+}
 
 function xOrO(square){
   return square === 'X' || 'O' ;
